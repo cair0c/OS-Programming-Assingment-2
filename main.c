@@ -22,8 +22,8 @@ int main(int argc, char *argv[]) {
     int *burst;
     // END OF PROVIDED VARIABLES
 
-    if (argc != 2) {
-        printf("Number of arguments needs to be 2");
+    if (argc != 3) {
+        printf("Number of arguments needs to be 3");
         return 1;
     }
 

@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 void firstComeFirstServed() {
     printf("you have chosen FCFS");
@@ -59,9 +60,13 @@ int main(int argc, char *argv[]) {
     //END OF PROVIDED CODE
 
     // maybe use when choosing algo to run
-    if (argv[2] == "FCFS") {
+    if (strcmp(argv[2], "FCFS") == 0)
+    {
         firstComeFirstServed();
-    } else if (argv[2] == "SJF") {
+    }
+
+    else if (strcmp(argv[2], "SJF") == 0)
+    {
         shortestJobFirst();
     }
 

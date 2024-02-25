@@ -7,10 +7,12 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
+    // delete later
     for (int args = 1; args < argc; args++) {
         printf("Arg %d: %s\n", args, argv[args]);
     }
 
+    // maybe use when choosing algo to run
     if (argv[2] == "FCFS") {
         printf("you have chosen FCFS");
     } else if (argv[2] == "SJF") {

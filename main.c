@@ -23,8 +23,12 @@ int main(int argc, char *argv[]) {
     int *burst;
     // END OF PROVIDED VARIABLES
 
-    if (argc != 3) {
+    if (argc != 3)
+    {
         printf("Number of arguments needs to be 3");
+        return 1;
+    } else if (strcmp(argv[2], "FCFS") != 0 | strcmp(argv[2], "SJF") != 0) {
+        printf("Algorithm argument should be FCFS or SJF");
         return 1;
     }
 

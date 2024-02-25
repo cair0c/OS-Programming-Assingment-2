@@ -68,7 +68,6 @@ int main(int argc, char *argv[]) {
     {
         firstComeFirstServed();
     }
-
     else if (strcmp(argv[2], "SJF") == 0)
     {
         shortestJobFirst();

@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void firstComeFirstServed() {
+    printf("you have chosen FCFS");
+}
+
+void shortestJobFirst() {
+    printf("you have chosen SJF");
+}
+
 int main(int argc, char *argv[]) {
 
     // PROVIDED VARIABLES
@@ -21,7 +29,6 @@ int main(int argc, char *argv[]) {
     }
 
     //START OF PROVIDED CODE
-
     // Open the file
     file = fopen(argv[1], "r");
     // Read the first line - number of processes, note the '&' operator before num_process
@@ -45,14 +52,13 @@ int main(int argc, char *argv[]) {
         printf("Process %d arrives at %d with burst time %d\n", i + 1, arrival[i],
                burst[i]);
     }
-
     //END OF PROVIDED CODE
 
     // maybe use when choosing algo to run
     if (argv[2] == "FCFS") {
-        printf("you have chosen FCFS");
+        firstComeFirstServed();
     } else if (argv[2] == "SJF") {
-        printf("you have chosen SJF");
+        shortestJobFirst();
     }
 
     // And remember to release the dynamically allocated memory after using
